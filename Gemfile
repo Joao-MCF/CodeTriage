@@ -112,6 +112,7 @@ gem 'stackprof'
 gem 'flamegraph'
 gem 'prawn'
 gem 'skylight', '~> 5.0.1'
+gem 'mini_racer', platforms: :ruby
 
 gem 'minitest', '5.14.4'
 gem 'sitemap_generator'

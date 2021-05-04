@@ -207,6 +207,7 @@ GEM
       kramdown (~> 2.0)
     launchy (2.5.0)
       addressable (~> 2.7)
+    libv8-node (15.14.0.1)
     listen (3.5.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -228,6 +229,8 @@ GEM
     mini_histogram (0.3.1)
     mini_mime (1.0.3)
     mini_portile2 (2.5.0)
+    mini_racer (0.4.0)
+      libv8-node (~> 15.14.0.0)
     minitest (5.14.4)
     mocha (1.12.0)
     msgpack (1.4.2)
@@ -484,6 +487,7 @@ DEPENDENCIES
   maildown (~> 3.3)
   memory_profiler
   mime-types (~> 3.3)
+  mini_racer
   minitest (= 5.14.4)
   mocha
   neat (~> 1.7)
