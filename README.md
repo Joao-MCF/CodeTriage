@@ -27,7 +27,7 @@ You must have Docker and Docker Compose on your machine.
 
 To build do:
 ```
-$ docker-compose up
+$ docker-compose build
 ```
 
 Create the database:
