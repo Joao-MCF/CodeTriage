@@ -21,6 +21,27 @@ You sign up to follow a repository, once a day you'll be emailed with an open is
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for details about contributing and running the project locally.
 
+## Installation
+
+You must have Docker and Docker Compose on your machine.
+
+To build do:
+```
+$ docker-compose up
+```
+
+Create the database:
+```
+$ docker-compose run web rake db:create
+$ docker-compose run web rake db:migrate
+```
+Run:
+```
+$ docker-compose up
+```
+
+open http://localhost:3000
+
 
 ## Contact
 
