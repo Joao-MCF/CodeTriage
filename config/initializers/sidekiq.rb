@@ -13,3 +13,17 @@ end
 if Sidekiq.server?
   Rails.application.config.active_record.warn_on_records_fetched_greater_than = 1500
 end
+
+Sidekiq.configure_server do |config|
+  config.redis = {
+    host: ENV['REDIS_HOST'],
+    port: ENV['REDIS_PORT'] || '6379'
+  }
+end
+
+Sidekiq.configure_client do |config|
+  config.redis = {
+    host: ENV['REDIS_HOST'],
+    port: ENV['REDIS_PORT'] || '6379'
+  }
+end
